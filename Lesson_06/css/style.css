@@ -1,0 +1,37 @@
+body
+{
+    font-family: Tahoma, sans-serif;
+
+    color: #333;
+}
+h1
+{
+    font-size: 24px;
+    font-weight: 700;
+
+    margin: 70px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+p
+{
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 60px;
+}
+img
+{
+    width: 71px;
+    height: 71px;
+    margin: 0 auto;
+}
+.container
+{
+    text-align: center;
+}
+.row
+{
+    margin-top: 80px;
+}
