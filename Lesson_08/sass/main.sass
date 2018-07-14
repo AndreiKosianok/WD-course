@@ -1,0 +1,52 @@
+$black: #131313
+$trns: all 0.2s
+=bg-col($trn)
+	background-color: rgba(255, 255, 255, $trn)
+.footer
+	margin-top: 60px
+	border-color: #131313
+	padding: 59px 0
+	color: lighten($black, 32.5)
+	&-policy-link
+		font-size: 12px
+	&
+		p
+			margin-bottom: 14px
+		a
+			color: lighten($black, 32.5)
+			text-decoration: none
+			&:hover
+				color: #fff
+		small
+			display: block
+			margin-top: 56px
+			line-height: 16px
+			font-size: 10px
+			min-width: 80%
+		ul
+			padding: 0
+			list-style: none
+			li
+				line-height: 32px
+		&-contacts, &-social-links
+			text-align: right
+		&-contacts_phone
+			font-weight: 400
+			font-size: 20px
+			color: #009adf
+		&-social-links
+			li
+				display: inline-block
+				a
+					display: inline-block
+					width: 42px
+					height: 42px
+					+bg-col(0.1)
+					text-align: center
+					border-radius: 50%
+					line-height: 42px
+					margin-left: 10px
+					transition: $trns
+					&:hover
+						+bg-col(0.9)
+						color: $black

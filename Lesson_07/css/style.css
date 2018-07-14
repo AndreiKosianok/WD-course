@@ -58,18 +58,19 @@ img {
     color: #f05a22;
     background-color: transparent;
     border: 3px solid #f05a22;
-}
-.section-title {
-    margin-bottom: 91px;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 27px;
+    width: 326px;
 }
 .features {
     padding-top: 89px;
     border-top: 100px;
     text-align: center;
     background-color: #f2f2f2;
+}
+.section-title {
+    margin-bottom: 91px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
 }
 .features-block__img {
     min-height: 50px;
@@ -78,7 +79,7 @@ img {
 .features-block__text {
     font-family: "OpenSans-Regular";
     color: #333333;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -88,7 +89,7 @@ img {
 }
 .clients-block__img {
     height: 264px;
-    width: 264px;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
     margin-right: 20px;
