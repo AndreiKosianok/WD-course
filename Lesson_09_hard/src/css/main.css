@@ -1,0 +1,106 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf); }
+
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif; }
+
+button:focus {
+  outline: none; }
+
+img {
+  max-width: 100%; }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 1140px; }
+
+.header-img {
+  max-width: 100%;
+  margin-right: 40px; }
+
+.header-text {
+  width: 54%;
+  margin-left: 34px; }
+
+.header-text__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.header-text__subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 35px; }
+
+.header-text__descr {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 47px; }
+
+.header-text__price {
+  color: #313131;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 53px; }
+
+.button {
+  border-radius: 5px;
+  border: 3px solid #f05a22;
+  background-color: #f05a22;
+  font-family: Tahoma;
+  font-size: 24.6px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 24px 37px;
+  margin-right: 40px;
+  margin-bottom: 20px; }
+
+.button-o {
+  font-family: Tahoma;
+  color: #f05a22;
+  background-color: transparent;
+  border: 3px solid #f05a22;
+  width: 326px; }
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin-bottom: 50px; }
+
+.features-container {
+  width: 60%; }
+
+.features-title {
+  font-size: 30px;
+    font-size-font-weight: 700;
+    font-size-line-height: 27px; }
+
+.row {
+  padding-top: 65px;
+  display: flex;
+  justify-content: space-between;
+    justify-content-align-items: baseline; }
+
+.features-block {
+  margin-bottom: 100px;
+  width: 217px; }
+
+.features-block__img {
+  margin-bottom: 23px;
+  min-height: 50px; }
+
+.features-block__text {
+  font-family: "OpenSans-Regular";
+    font-family-color: #333333;
+    font-family-font-size: 18px;
+    font-family-font-weight: 400;
+    font-family-line-height: 22px; }
