@@ -137,6 +137,10 @@ button {
   font-weight: 400;
   margin-top: 20px;
   padding: 29px 46px;
+  border: none;
   color: #fff;
   background-color: #e70000;
   box-shadow: 0 9px 21px rgba(0, 0, 0, 0.15); }
+
+button:focus {
+  outline: none; }

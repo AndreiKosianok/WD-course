@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+.open_sans {
+	font-family: "Open Sans";
+}
+@font-face {
+    font-family: 'Bebas Regular';
+    src: url('../fonts/BebasRegular/BebasRegular.eot');
+    src: url('../fonts/BebasRegular/BebasRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasRegular/BebasRegular.woff') format('woff'),
+        url('../fonts/BebasRegular/BebasRegular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+.bebas_regular {
+	font-family: "Bebas Regular";
+}
+@font-face {
+	font-family: "Bad Script";
+	src: url(../fonts/BadScript/BadScript-Regular.ttf);
+}
+.bad_script {
+	font-family: "Bad Script";
+}
+@font-face {
+	font-family: "Lobster";
+	src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+.lobster {
+	font-family: "Lobster";
+}
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
+

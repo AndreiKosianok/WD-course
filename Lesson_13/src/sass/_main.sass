@@ -1,0 +1,43 @@
+.main
+	position: relative
+	padding-top: 65px
+	padding-bottom: 60px
+	background: #373737 url(../img/main/main_background.jpg) center no-repeat
+	color: $text-color-light
+	z-index: 2
+	/* Затемнение фонового изображения на главном экране */
+	&::before
+		content: ''
+		/* Делаем элемент блочным */
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: 0
+	/* Оформление главной картинки */
+	&-img
+		transform: translate(-107px, 0px)
+		position: relative
+		&::before
+			/* Круг за картинкой */
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 390px
+			height: 390px
+			left: 50%
+			margin-left: -88px
+			transform: translate(0px, 13px)
+			border: 1px solid #ffffff
+			border-radius: 50%
+	/* Заголовок */
+	&-text
+		&__title
+			font-size: 41px
+			font-weight: 700
+		&__subtitle
+			font-size: 28px
+			font-weight: 300

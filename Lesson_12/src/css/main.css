@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto Light;
+  src: url(../fonts/Roboto-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto Bold;
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto Black;
+  src: url(../fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.button {
+  font-family: "Roboto";
+  font-size: 14px;
+  background-color: #fd9c28;
+  border: none;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #d77602;
+}
+.button img {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.header {
+  padding-top: 60px;
+}
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #373737;
+}
+.header-contacts__phone {
+  font-size: 22px;
+  width: 188px;
+  margin-right: 13px;
+}
+.header-contacts__phone a {
+  color: #373737;
+  text-decoration: none;
+}
+.header-contacts__phone a:hover {
+  color: #fd9c28;
+}
+.header-contacts__phone:first-child {
+  -webkit-box-shadow: inset -1px 0px 0px #cfcfd0;
+          box-shadow: inset -1px 0px 0px #cfcfd0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991px) {
+  .button:hover {
+    cursor: default;
+    background-color: #fd9c28;
+  }
+
+  .header-contacts__phone a:hover {
+    color: #373737;
+  }
+}
