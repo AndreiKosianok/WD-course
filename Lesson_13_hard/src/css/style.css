@@ -99,11 +99,13 @@ body {
 }
 
 .header {
-  padding: 15px;
-  padding-bottom: 15px;
+  padding: 22px;
+  padding-bottom: 7px;
 }
 .header__logo {
   height: 61px;
+  -webkit-transform: translate(0px, -6px);
+          transform: translate(0px, -6px);
 }
 .header-contacts {
   display: -webkit-box;
@@ -176,6 +178,16 @@ body {
           transform: translate(0px, 13px);
   border: 1px solid #ffffff;
   border-radius: 50%;
+}
+.main-img::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 50px;
+  left: 26%;
+  bottom: -3%;
+  background-image: url(../img/main/main_r_logo.png);
 }
 .main-text__title {
   font-size: 41px;

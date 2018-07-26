@@ -1,0 +1,74 @@
+.main
+	position: relative
+	padding-top: 65px
+	padding-bottom: 60px
+	background: #373737 url(../img/main/main_background.jpg) center no-repeat
+	background-size: cover
+	color: $text-color-light
+	z-index: 2
+	/* Затемнение фонового изображения на главном экране */
+	&::before
+		content: ''
+		/* Делаем элемент блочным */
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.7)
+		z-index: 0
+	/* Оформление главной картинки */
+	&-img
+		transform: translate(-107px, 0px)
+		position: relative
+		&::before
+			/* Круг за картинкой */
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 390px
+			height: 390px
+			left: 50%
+			margin-left: -88px
+			transform: translate(0px, 13px)
+			border: 1px solid #ffffff
+			border-radius: 50%
+	/* Заголовок */
+	&-text
+		&__title
+			margin-bottom: 20px
+			font-size: 41px
+			font-weight: 700
+		&__subtitle
+			margin-bottom: 27px
+			font-size: 28px
+			font-weight: 300
+		&__form
+			padding: 30px 27px
+			background-color: rgba(255, 255, 255, 0.2)
+.form
+	display: flex
+	margin-bottom: 12px
+	&-title
+		margin-bottom: 20px
+		padding-right: 79px
+		font-size: 20px
+		font-weight: 300
+		line-height: 30px
+		&__important
+			font-weight: 700
+			text-transform: uppercase
+	&__input
+		margin-right: 10px
+		font-size: 14px
+		font-weight: 300
+		padding: 20px
+		border-radius: 5px
+		border: none
+		vertical-align: middle
+		flex-basis: 65%
+	&__small
+		margin-left: 19px
+		font-size: 14px
+		font-weight: 300
