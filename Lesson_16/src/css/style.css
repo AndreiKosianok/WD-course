@@ -1,0 +1,279 @@
+@charset "UTF-8";
+body {
+  margin: 0; }
+
+input, button {
+  font-family: "Roboto"; }
+  input:focus, button:focus {
+    outline: none; }
+
+/* img	max-width: 100% */
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto Light;
+  src: url(../fonts/Roboto-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto Bold;
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto Black;
+  src: url(../fonts/Roboto-Black.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .overlay .popup {
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    width: 752px;
+    transform: translateX(-50%); }
+    .overlay .popup-close {
+      position: absolute;
+      right: -18px;
+      top: -34px;
+      font-size: 35px;
+      color: #fff;
+      font-weight: 300;
+      cursor: pointer; }
+    .overlay .popup-title {
+      display: block;
+      width: 100%;
+      min-height: 71px;
+      margin: 0;
+      background-color: #ff9d00;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 71px;
+      font-size: 21px;
+      font-weight: 500;
+      text-align: center; }
+    .overlay .popup-form {
+      background: url(../img/modal/modal_background.jpg) center no-repeat;
+      background-size: cover;
+      padding: 35px 88px 17px 88px;
+      color: #fff; }
+      .overlay .popup-form-header {
+        padding: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: center; }
+        .overlay .popup-form-header span {
+          font-size: 24px; }
+      .overlay .popup-form__label {
+        display: block;
+        margin-top: 23px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 25px; }
+      .overlay .popup-form__input {
+        width: 365px;
+        height: 56px;
+        padding-left: 18px;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        margin-top: 17px;
+        color: #373737;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 42px;
+        transform: translatey(-3px); }
+      .overlay .popup-form__btn {
+        width: 180px;
+        height: 56px;
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 16px;
+        background-color: #ff9d00; }
+      .overlay .popup-form__note {
+        margin-top: 9px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 12px;
+        text-align: center; }
+
+.button {
+  font-family: "Roboto";
+  font-size: 14px;
+  background-color: #fd9c28;
+  border: none;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 3px; }
+  .button:hover {
+    cursor: pointer;
+    background-color: #d77602; }
+  .button img {
+    margin-right: 4px;
+    vertical-align: middle; }
+  .button_big {
+    font-size: 14px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    vertical-align: middle;
+    width: 33%; }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  background-color: #373737; }
+  .menu-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .menu-navigation a {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-right: 1px dotted rgba(207, 207, 208, 0.2);
+      padding-right: 14px; }
+      .menu-navigation a:last-child {
+        border-right: none;
+        padding-right: 0; }
+      .menu-navigation a:hover {
+        color: #fd9c28; }
+
+.header {
+  padding: 15px;
+  padding-bottom: 15px; }
+  .header__logo {
+    height: 61px; }
+  .header-contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #373737; }
+    .header-contacts__phone {
+      font-size: 22px;
+      width: 188px;
+      margin-right: 13px; }
+      .header-contacts__phone a {
+        color: #373737;
+        text-decoration: none; }
+        .header-contacts__phone a:hover {
+          color: #fd9c28; }
+      .header-contacts__phone:first-child {
+        /* border-right: 1px solid #cfcfd0 padding-right: 13px */
+        box-shadow: inset -1px 0px 0px #cfcfd0; }
+
+.main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url(../img/main/main_background.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 2;
+  /* Затемнение фонового изображения на главном экране */
+  /* Оформление главной картинки */
+  /* Заголовок */ }
+  .main::before {
+    content: "";
+    /* Делаем элемент блочным */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0; }
+  .main-img {
+    transform: translate(-107px, 0px);
+    position: relative; }
+    .main-img::before {
+      /* Круг за картинкой */
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 390px;
+      height: 390px;
+      left: 50%;
+      margin-left: -88px;
+      transform: translate(0px, 13px);
+      border: 1px solid #ffffff;
+      border-radius: 50%; }
+  .main-text__title {
+    margin-bottom: 20px;
+    font-size: 41px;
+    font-weight: 700; }
+  .main-text__subtitle {
+    margin-bottom: 27px;
+    font-size: 28px;
+    font-weight: 300; }
+  .main-text__form {
+    padding: 30px 27px;
+    background-color: rgba(255, 255, 255, 0.2); }
+
+.form {
+  display: flex;
+  margin-bottom: 12px; }
+  .form-title {
+    margin-bottom: 20px;
+    padding-right: 79px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px; }
+    .form-title__important {
+      font-weight: 700;
+      text-transform: uppercase; }
+  .form__input {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    vertical-align: middle;
+    flex-basis: 65%; }
+  .form__small {
+    margin-left: 19px;
+    font-size: 14px;
+    font-weight: 300; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px; } }
+@media (max-width: 991px) {
+  .button:hover {
+    cursor: default;
+    background-color: #fd9c28; }
+
+  .header-contacts__phone a:hover {
+    color: #373737; } }
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
