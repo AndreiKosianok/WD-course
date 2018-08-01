@@ -1,0 +1,339 @@
+@media (min-width: 1200px)
+	.container
+		max-width: 970px
+@media (max-width: 991px)
+	.button:hover
+		cursor: default
+		background-color: $active-color
+	.header
+		&-contacts
+			&__phone
+				&s
+					display: flex
+					justify-content: flex-end
+					flex-direction: column
+				font-size: 14px
+				margin-right: 0
+				a
+					display: flex
+					justify-content: flex-end
+				a:hover
+					color: $text-color-dark
+				a span
+					font-family: Roboto Black
+					font-weight: 900
+				&:first-child
+					padding-right: 0
+					border: none
+@media (min-width: 992px) and (max-width: 1199px)
+	.container
+			max-width: 970px
+	.main
+		&-img
+			transform: translate(-15px, -10px)
+			img
+				height: auto
+				width: auto
+				max-width: 400px
+				max-height: 332px
+		&-text
+			&__title
+				font-size: 34px
+				line-height: 34px
+				font-weight: 500
+			&__subtitle
+				font-size: 23px
+				font-weight: 300
+	.form
+		white-space: nowrap
+		&-title
+			font-size: 18px
+			font-weight: 200
+			&__important
+				font-size: 18px
+				font-weight: 700
+@media (min-width: 768px) and (max-width: 992px)
+	.hidden-tablet
+		display: none
+	.header
+		background: #f4f4f4
+		padding: 15px 0 15px 0
+		&-start
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			&__menu
+				width: 23px
+				height: 17px
+				margin-right: 15px
+				background: url(../img/header/header_menu_button.png) center no-repeat
+		&-contacts
+			&__button
+				margin-left: 14px
+			&__phone
+				font-size: 18px
+				margin-right: 0
+	.main
+		text-align: center
+		padding-top: 50px
+		&-text
+			&__title
+				font-size: 34px
+				line-height: 34px
+				font-weight: 500
+			&__subtitle
+				font-size: 23px
+				font-weight: 300
+	.form
+		white-space: nowrap
+		&-title
+			font-size: 18px
+			font-weight: 200
+			&__important
+				font-size: 18px
+				font-weight: 700
+	.numbers
+		&-block
+			width: 66%
+			margin-bottom: 30px
+	.products
+		&-block
+			&__img
+				height: auto
+				width: auto
+				max-width: 358px
+				max-height: 239px
+	.products-block__title:last-child
+		margin-bottom: 54px
+@media (min-width: 576px) and (max-width: 768px)
+	.container
+		width: 100%
+		max-width: 720px
+		margin-right: auto
+		margin-left: auto
+		padding-right: 15px
+		padding-left: 15px
+	.hidden-tablet
+		display: none
+	.menu
+		.container
+			display: flex
+			justify-content: center
+			flex-direction: row
+			margin: 0
+		&-navigation a
+			padding: 1%
+			font-size: 10px
+	.header
+		background: #f4f4f4
+		padding: 15px 0 15px 0
+		&-start
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			&__menu
+				width: 23px
+				height: 17px
+				margin-right: 15px
+				background: url(../img/header/header_menu_button.png) center no-repeat
+		&-contacts
+			&__button
+				display: inline-block
+				width: 85px
+				height: 45px
+				align-items: center
+				padding: 12px 22px
+				margin-left: 14px
+				img
+					margin-bottom: 7px
+			&__phone
+				font-size: 18px
+				margin-right: 0
+				a span
+					font-family: Roboto Black
+					font-weight: 900
+				&s
+					display: flex
+					justify-content: flex-end
+					flex-direction: column
+				&:first-child
+					border: none
+	.main
+		text-align: center
+		padding-top: 50px
+		&-text
+			&__title
+				font-size: 34px
+				line-height: 34px
+				font-weight: 500
+			&__subtitle
+				font-size: 23px
+				font-weight: 300
+	.form
+		white-space: nowrap
+		&-title
+			font-size: 18px
+			font-weight: 200
+			&__important
+				font-size: 18px
+				font-weight: 700
+	.overlay
+		.popup
+			&-close
+				right: -19px
+				top: -33px
+			&-title
+				line-height: 71px
+				font-size: 21px
+				font-weight: 500
+	.numbers
+		&-block
+			width: 66%
+			margin-bottom: 30px
+	.features
+		&-blocks
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+@media (max-width: 576px)
+	.container
+		max-width: 540px
+	.hidden-mobile
+			display: none
+	.header
+		background: #f4f4f4
+		padding: 15px 0 15px 0
+		&-start
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			&__menu
+				width: 23px
+				height: 17px
+				margin-right: 15px
+				background: url(../img/header/header_menu_button.png) center no-repeat
+			&__logo
+				background: $active-color url(../img/header/header_logo_mobile.png) center no-repeat
+				width: 35px
+				height: 35px
+				border-radius: 4px
+		&-contacts
+			&__button
+				display: inline-block
+				width: 27px
+				height: 27px
+				align-items: center
+				padding: 6px 6px 6px 6px
+				margin-left: 14px
+				img
+					width: 15px
+					height: 15px
+					margin-bottom: 7px
+	.main
+		text-align: center
+		padding-top: 50px
+		&-text
+			&__title
+				font-size: 22px
+				color: $active-color
+			&__subtitle
+				font-size: 18px
+				margin-bottom: 40px
+			&__form
+				background-color: transparent
+				padding: 0
+	.form
+		display: block
+		&-title
+			padding-right: 0
+			font-size: 15px
+			line-height: 1.4
+		&__input
+			display: block
+			margin-left: auto
+			margin-right: auto
+			width: 290px
+			text-align: center
+			margin-bottom: 13px
+		button
+			display: block
+			margin-left: auto
+			margin-right: auto
+			width: 180px
+		&__small
+			margin: 0
+	.button
+		&_big
+			width: 67%
+	.overlay
+		.popup
+			width: 320px
+			top: 68px
+			&-close
+				right: -19px
+				top: -33px
+			&-title
+				font-size: 18px
+				font-weight: 500
+			&-form
+				padding: 0
+				text-align: center
+				&-header
+					font-size: 20px
+					line-height: 24px
+					span
+						display: block
+						font-size: 16px
+						font-weight: 400
+				&__input
+					width: 290px
+					height: 47px
+					margin-bottom: 13px
+				&__btn
+					width: 180px
+					height: 51px
+				&__note
+					margin-top: 16px
+					margin-left: 0
+					font-size: 13px
+			.main-form
+				padding: 50px 19px
+	.numbers
+		&-block
+			width: 100%
+			margin-bottom: 16px
+			&__title
+				font-size: 30px
+			&__text
+				font-size: 14px
+	.features
+		padding-top: 24px
+		padding-bottom: 10px
+		&-blocks
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+	.products
+		padding-top: 32px
+		padding-bottom: 43px
+		&-block
+			&__title
+				font-size: 18px
+			&__img
+				width: 100%
+				height: auto
+				width: auto
+				max-width: 315px
+				max-height: 210px
+		button
+			font-size: 14px
+		.button-o
+			padding: 14px 19px 16px 20px
+			margin-bottom: 11px
+		.button
+			padding: 14px 20px 16px 19px
+	.section
+		&-title
+			font-size: 22px
