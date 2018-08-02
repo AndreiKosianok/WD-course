@@ -299,9 +299,11 @@ input:focus, button:focus {
   z-index: 0;
 }
 .main-img {
+  position: relative;
+}
+.main-img img {
   -webkit-transform: translate(-105px, 7px);
           transform: translate(-105px, 7px);
-  position: relative;
 }
 .main-text__title {
   margin-bottom: 10px;
@@ -352,6 +354,44 @@ input:focus, button:focus {
   margin-left: 19px;
   font-size: 14px;
   font-weight: 300;
+}
+
+@-webkit-keyframes move {
+  from {
+    opacity: 0;
+    margin-bottom: -150px;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+    -webkit-transform: rotateY(1turn);
+            transform: rotateY(1turn);
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    margin-bottom: -150px;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+    -webkit-transform: rotateY(1turn);
+            transform: rotateY(1turn);
+  }
+}
+.animation {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .numbers {
@@ -783,7 +823,7 @@ input:focus, button:focus {
   }
 
   .overlay .popup-close {
-    right: -19px;
+    right: 0px;
     top: -33px;
   }
   .overlay .popup-title {
