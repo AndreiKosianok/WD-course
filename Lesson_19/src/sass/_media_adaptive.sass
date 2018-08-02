@@ -34,7 +34,7 @@
 			max-width: 970px
 	.main
 		&-img
-			transform: translate(-15px, -10px)
+			transform: translate(70px, -10px)
 			img
 				height: auto
 				width: auto
@@ -56,6 +56,21 @@
 			&__important
 				font-size: 18px
 				font-weight: 700
+	@keyframes move
+		from
+			opacity: 0
+			margin-bottom: -50px
+			transform:	rotateY(0)
+		to
+			opacity: 1
+			margin-bottom: 0
+			transform:	rotateY(1turn)
+
+
+.animation
+	animation-name: move
+	animation-duration: 1s
+	animation-delay: 0.4s
 @media (min-width: 768px) and (max-width: 992px)
 	.hidden-tablet
 		display: none
