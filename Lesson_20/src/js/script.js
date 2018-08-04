@@ -20,15 +20,24 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		asNavFor: '.production-slider_bottom',
-		responsive: [{
+		responsive: [
+			{
 			breakpoint: 768,
 				settings: {
-					slidesToShow: 1,
-					arrows: true,
-					prevArrow: '<div class="slider-arrow slider-arrow_production slider-arrow_left"></div>',
-					nextArrow: '<div class="slider-arrow slider-arrow_production slider-arrow_right"></div>'
+					slidesToShow: 1
 				}
-		}]
+			},
+			{
+			breakpoint: 576,
+				settings: {
+					arrows: true,
+					asNavFor: null,
+					adaptiveHeight: true,
+					prevArrow: '<div class="slider-arrow slider-arrow_left"></div> ',
+					nextArrow: '<div class="slider-arrow slider-arrow_right"></div> ',
+					focusOnSelect: true
+				}
+			}]
 	});
 
 	$('.production-slider_bottom').slick({
@@ -37,24 +46,39 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		prevArrow: '<div class="slider-arrow slider-arrow_production slider-arrow_left"></div>',
 		nextArrow: '<div class="slider-arrow slider-arrow_production slider-arrow_right"></div>',
-		asNavFor: '.production-slider_top'
+		asNavFor: '.production-slider_top',
+		focusOnSelect: true,
+		responsive: [
+			{
+			breakpoint: 576,
+				settings: {
+					arrows: true,
+					slidesToShow: 1,
+					asNavFor: null,
+				}
+			}]
 	});
 
-	$('.feedback-slider').slick({
+	$('.comments-slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		prevArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_feedback_left"></div>',
-		nextArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_feedback_right"></div>',
-		responsive: [{
+		prevArrow: '<div class="slider-arrow slider-arrow_comments slider-arrow_comments_left"></div>',
+		nextArrow: '<div class="slider-arrow slider-arrow_comments slider-arrow_comments_right"></div>',
+		responsive: [
+			{
 			breakpoint: 992,
 				settings: {
+					arrows: true,
 					slidesToShow: 2
 				}
 			},
 			{
-			breakpoint: 768,
+			breakpoint: 576,
 				settings: {
-					slidesToShow: 1
+					arrows: true,
+					slidesToShow: 1,
+			 		prevArrow: '<div class="slider-arrow slider-arrow_left"></div> ',
+					nextArrow: '<div class="slider-arrow slider-arrow_right"></div> ',
 				}
 			}]
 	});

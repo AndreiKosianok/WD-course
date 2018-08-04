@@ -2,6 +2,10 @@
 	.container
 		max-width: 970px
 @media (max-width: 991px)
+	.section
+		&-title
+			&::after
+				display: none
 	.button:hover
 		cursor: default
 		background-color: $active-color
@@ -29,6 +33,14 @@
 		&-image
 			img
 				filter: none
+	.production
+		flex-direction: column-reverse
+		&-text
+			&__title
+				transform: translateX(0px)
+				width: 100%
+				justify-content: center
+				align-items: center
 @media (min-width: 992px) and (max-width: 1199px)
 	.container
 			max-width: 970px
@@ -361,6 +373,30 @@
 	.section
 		&-title
 			font-size: 22px
+	.production
+		&-slider
+			&_top
+				margin: 0
+				img
+					height: 380px
+					overflow-y: hidden
+			&_bottom
+				display: none
+	.slider-arrow
+		z-index: 999
+		height: 70px
+		width: 30px
+		position: absolute
+		top: 40%
+		//margin-top: -height/2
+		&_production
+			border: none
+		&_left
+			left: 0
+			background: $active-color url(../img/slider/arrow-left_active.png) center no-repeat
+		&_right
+			right: 0
+			background: $active-color url(../img/slider/arrow-right_active.png) center no-repeat
 	.customers
 		&-image
 			img
