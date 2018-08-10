@@ -1,0 +1,46 @@
+.production
+	padding:
+		top: 85px
+		bottom: 89px
+	&-slider
+		img
+			outline: none
+		&_top
+			object-fit: fill
+			margin-bottom: 13px
+			height: 377px
+			overflow-y: hidden
+		&_bottom
+			padding-left: 30px
+			padding-right: 30px
+			height: 78px
+			overflow: hidden
+			img
+				margin: 0 3px
+				filter: brightness(50%)
+			.slick-current
+				img
+					filter: brightness(100%)
+	&-text
+		margin: 19px 0
+		&__title
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			width: 403px
+			height: 62px
+			color: $text-color-light
+			background-color: $active-color
+			font-size: 28px
+			font-weight: 400
+			line-height: 22px
+			padding-left: 30px
+			transform: translateX(-30px)
+			margin-bottom: 25px
+		&__descr
+			font-size: 16px
+			font-weight: 300
+			line-height: 24px
+			text-align: justify
+			p
+				margin-bottom: 10px
