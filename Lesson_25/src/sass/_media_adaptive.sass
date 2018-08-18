@@ -56,7 +56,6 @@
 				a:hover
 					color: $text-color-dark
 				a span
-					font-family: Roboto Black
 					font-weight: 900
 				&s
 					display: flex
@@ -72,25 +71,25 @@
 				align-items: center
 				padding: 6px 6px 6px 6px
 				margin-left: 14px
+				//margin-bottom: 5px
 				img
 					width: 15px
 					height: 15px
 					margin-bottom: 7px
 	.customers
 		&-image
-			img
-				filter: none
+			filter: none
 	.production
 		flex-direction: column-reverse
 		&-text
 			&__title
-				padding-left: 0
-				transform: translateX(0px)
-				//transform: scale(1.1, 1)
-				width: 100%
-				justify-content: center
-				align-items: center
+				text-align: center
 				text-transform: uppercase
+				font-size: 22px
+				font-weight: 700
+			&__descr
+				font-size: 14px
+				line-height: 24px
 @media (min-width: 992px) and (max-width: 1199px)
 	.container
 			max-width: 970px
@@ -138,6 +137,12 @@
 @media (min-width: 768px) and (max-width: 992px)
 	.hidden-tablet
 		display: none
+	.overlay
+		.popup
+			width: 651px
+			&-form
+				&__input
+					width: 300px
 	.main
 		text-align: center
 		padding-top: 50px
@@ -178,6 +183,14 @@
 		margin-left: auto
 		padding-right: 15px
 		padding-left: 15px
+	.overlay
+		.popup
+			width: 500px
+			&-form
+				text-align: center
+				&__input
+					width: 300px
+					margin-bottom: 13px
 	.hidden-tablet
 		display: none
 	.menu
@@ -207,7 +220,7 @@
 	.overlay
 		.popup
 			&-close
-				right: 0px
+				right: -17px
 				top: -33px
 			&-title
 				line-height: 71px
@@ -236,17 +249,29 @@
 	.production
 		padding-top: 36px
 		&-text
+			margin: 0
 			&__title
-				width: 109%
-				transform: translateX(-35px)
-				font-size: 20px
-				font-weight: 700
+				width: 100%
+				margin: 0
 			&__descr
-				font-size: 14px
+				margin: 25px 15px 15px 15px
+				font-size: 16px
 				font-weight: 300
 		&-slider
 			&_bottom
 				display: none
+	.slider-arrow
+		z-index: 1
+	.customers
+		&-image
+			min-height: 0
+			//height: 87px
+			//width: 143px
+			height: 100px
+			width: 170px
+			margin-bottom: 7px
+			img
+				max-width: 90px
 	.contacts
 		&-block
 			position: relative
@@ -279,6 +304,9 @@
 				margin-bottom: 4px
 				font-size: 14px
 				padding: 13px 24px
+	.reset
+		padding: 0!important
+		min-width: 100%
 @media (max-width: 576px)
 	.container
 		max-width: 540px
@@ -291,14 +319,16 @@
 				line-height: 35px
 	.main
 		text-align: center
-		padding-top: 50px
+		padding-top: 45px
 		&-text
 			&__title
+				line-height: 25px
 				font-size: 22px
 				color: $active-color
+				margin-bottom: 6px
 			&__subtitle
 				font-size: 18px
-				margin-bottom: 40px
+				margin-bottom: 35px
 			&__form
 				background-color: transparent
 				padding: 0
@@ -308,6 +338,8 @@
 			padding-right: 0
 			font-size: 15px
 			line-height: 1.4
+			&__important
+				margin-top: 7px
 		&__input
 			display: block
 			margin-left: auto
@@ -327,8 +359,8 @@
 			width: 67%
 	.overlay
 		.popup
-			width: 250px
-			top: 68px
+			width: 260px
+			top: 88px
 			&-close
 				right: -19px
 				top: -33px
@@ -356,15 +388,15 @@
 					height: 47px
 					margin-bottom: 13px
 				&__btn
-					width: 165px
-					height: 51px
+					//width: 165px
+					//height: 51px
 				&__note
 					margin-top: 16px
 					margin-left: 0
 					margin-bottom: 5px
 					font-size: 13px
 			.main-form
-				padding: 10px 0px
+				padding: 10px
 	.numbers
 		margin-bottom: 6px
 		&-block
@@ -399,7 +431,6 @@
 			font-size: 14px
 		.button-o
 			padding: 14px 19px 16px 20px
-			margin-bottom: 11px
 		.button
 			padding: 14px 20px 16px 19px
 	.section
@@ -409,19 +440,23 @@
 		padding-top: 28px
 		padding-bottom: 51px
 		&-text
+			margin: 0
 			&__title
-				width: 109%
-				transform: translateX(-21px)
 				font-size: 20px
 				font-weight: 700
+				margin: 0
 			&__descr
+				padding: 17px 15px 22px 15px
+				text-align: center
+				word-spacing: 1px
 				font-size: 14px
 				font-weight: 300
+				line-height: 18px
 		&-slider
 			&_top
 				margin: 0
 				img
-					height: 380px
+					//height: 380px
 					overflow-y: hidden
 			&_bottom
 				display: none
@@ -429,11 +464,10 @@
 		padding-top: 50px
 		padding-bottom: 52px
 		&-title
-			font-family: Roboto Bold
 			font-size: 20px
 			font-weight: 700
 			&_small
-				font-family: Roboto
+				margin-top: 7px
 				font-size: 16px
 				font-weight: 400
 		&-form
@@ -456,7 +490,9 @@
 		height: 70px
 		width: 22px
 		position: absolute
-		top: 40%
+		top: 50%
+		margin-top: -35px
+		z-index: 1
 		//margin-top: -height/2
 		&_production
 			border: none
@@ -467,16 +503,29 @@
 			right: 0
 			background: $active-color url(../img/slider/arrow-right_active.png) center no-repeat
 	.customers
-		.section-title
-			margin-bottom: 21px
-		&-image
-			img
-				max-width: 115px
+		padding: 0 0
 		&-blocks
 			margin-top: 21px
 			margin-bottom: 0
+			padding: 0 10px 0 10px
+		&-image
+			min-height: 0
+			height: 87px
+			max-width: 100%
+			margin-bottom: 7px
+			margin-right: 5px
+			justify-content: center
+			img
+				max-width: 87px
+				max-height: 75px
+		&-p
+			padding: 0!important
+		.section-title
+			margin-bottom: 21px
 	.comments
 		padding-top: 31px
+		&-slider
+			transform: translateX(-7px)
 	.contacts
 		&-block
 			position: relative
@@ -512,7 +561,14 @@
 	.map
 		width: 90%
 		height: 440px
-		margin: 0 auto
+		margin:
+			top: 0
+			bottom: 14px
+			left: auto
+			right: auto
+	.reset
+		padding: 0!important
+		min-width: 100%
 @media (max-width: 340px)
 	.comments
 		.slider-arrow
@@ -523,5 +579,3 @@
 	.production
 		&-text
 			&__title
-				width: 110%
-				transform: translateX(-15px)

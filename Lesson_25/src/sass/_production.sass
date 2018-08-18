@@ -8,7 +8,7 @@
 		&_top
 			object-fit: fill
 			margin-bottom: 13px
-			height: 377px
+			//height: 377px
 			overflow-y: hidden
 		&_bottom
 			padding-left: 30px
@@ -18,24 +18,22 @@
 			img
 				margin: 0 3px
 				filter: brightness(50%)
+			.slick-slide
+				margin-right: 3px
+				margin-left: 3px
 			.slick-current
 				img
 					filter: brightness(100%)
 	&-text
 		margin: 19px 0
 		&__title
-			display: flex
-			justify-content: flex-start
-			align-items: center
-			width: 403px
-			height: 62px
 			color: $text-color-light
 			background-color: $active-color
 			font-size: 28px
 			font-weight: 400
 			line-height: 22px
-			padding-left: 30px
-			transform: translateX(-30px)
+			padding: 18px 30px
+			margin-left: -30px
 			margin-bottom: 25px
 		&__descr
 			font-size: 16px
