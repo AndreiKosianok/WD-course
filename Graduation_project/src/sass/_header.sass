@@ -2,15 +2,18 @@
     display: flex
     justify-content: center
     align-items: center
-    padding-top: 46px
-    .container
+    padding-top: 54px
+    &-block
         display: flex
         justify-content: space-between
-    &-block
+        align-items: center
+        flex-direction: row
         &__text
             display: flex
-            flex-direction: row
+            flex-direction: rowы
             &-title
+                text-align: left
+                line-height: 14px
                 width: 122px
                 margin-left: 42px
                 font-size: 12px
@@ -22,20 +25,50 @@
                     letter-spacing: 0.12px
         &__contacts
             text-align: right
+            //margin-top: -9px
             a
                 color: #ffffff
                 font-size: 20px
                 font-weight: 500
                 letter-spacing: 0.2px
                 text-decoration: none
+                &:hover
+                    color: #B5B0B0
             .phones-descr
-                margin-top: 7px
+                margin-top: 5px
                 font-size: 12px
-                font-weight: 400
-                letter-spacing: 0.12px
+                font-weight: 300
+                letter-spacing: 0.19px
             .call-order
-                margin-top: 16px
+                margin-top: 13px
+                margin-left: auto
+                padding-bottom: 2px
                 color: #ff3469
                 font-size: 16px
                 cursor: pointer
                 border-bottom: 1px solid #ff3469
+                width: 134px
+                &:hover
+                    color: #ff1844
+                    border-bottom: 1px solid #ff1844
+.background-flowers
+    &__left
+        position: absolute
+        top: 15%
+        left: 15.8%
+        z-index: -1
+    &__top
+        position: absolute
+        top: 0
+        left: 60%
+        z-index: -1
+    &__right
+        position: absolute
+        top: 42%
+        right: 14%
+        z-index: -1
+    &__bottom
+        position: absolute
+        top: 315%
+        left: 17.5%
+        z-index: -1

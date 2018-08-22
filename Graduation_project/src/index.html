@@ -2,48 +2,718 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/favicon.ico">
     <title>Flowers shop</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
         <div class="container">
-            <div class="header-block__text">
-                <div class="header-block__text-logo">
-                    <a href="#">
-                        <img src="img/header/header-logo.png" alt="logo">
-                    </a>
-                </div>
-                <!-- /.logo -->
-                <div class="header-block__text-title">
-                        Интернет-магазин 
-                        цветов с доставкой 
-                        по всей <span>России</span>
-                </div>
-                <!-- /.title -->
-            </div>
-            <!-- /.header-block__text -->
-            <div class="header-block__contacts">
-                <div class="phones">
-                    <a href="tel:88006548745">8 (800) 654-87-45</a>
-                    <div class="phones-descr">
-                        Звонок по России бесплатный
+            <div class="header-block">
+                <div class="header-block__text">
+                    <div class="header-block__text-logo">
+                        <a href="#">
+                            <img src="img/header/header-logo.png" alt="logo">
+                        </a>
                     </div>
-                    <!-- /.phones-descr -->
+                    <!-- /.logo -->
+                    <div class="header-block__text-title">
+                            Интернет-магазин 
+                            цветов с доставкой 
+                            по всей <span>России</span>
+                    </div>
+                    <!-- /.title -->
                 </div>
-                <!-- /.logo -->
-                <div class="call-order">
-                    Заказать звонок
+                <!-- /.header-block__text -->
+                <div class="header-block__contacts">
+                    <div class="phones">
+                        <a href="tel:88006548745">8 (800) 654-87-45</a>
+                        <div class="phones-descr">
+                            Звонок по России бесплатный
+                        </div>
+                        <!-- /.phones-descr -->
+                    </div>
+                    <!-- /.logo -->
+                    <div class="call-order" onclick="overlay()">
+                        Заказать звонок
+                    </div>
+                    <!-- /.title -->
                 </div>
-                <!-- /.title -->
+                <!-- /.header-block__text -->
             </div>
-            <!-- /.header-block__text -->
+            <!-- /.header-block -->
         </div>
         <!-- /.container -->
     </div>
+    <div class="background-flowers">
+        <div class="background-flowers__left">
+            <img src="img/background-flower_left.png" alt="background-flower_left">
+        </div>
+        <!-- /.background-flowers__left -->
+        <div class="background-flowers__top">
+            <img src="img/background-flower_top.png" alt="background-flower_top">
+        </div>
+        <!-- /.background-flowers__top -->
+        <div class="background-flowers__right">
+                <img src="img/background-flower_right.png" alt="background-flower_right">
+        </div>
+        <!-- /.background-flowers__right -->
+        <div class="background-flowers__bottom">
+                <img src="img/background-flower_botom.png" alt="background-flower_bottom">
+        </div>
+        <!-- /.background-flowers__right -->
+    </div>
+    <!-- /.background-flowers -->
     <!-- /.header -->
+    <div class="main">
+        <div class="container">
+            <h1 class="main-title">Эксклюзивные цветы&nbsp;и&nbsp;букеты<br> flowers&nbsp;Shop</h1>
+            <!-- /.main-title -->
+            <div class="main-descr">
+                первая в россии эксклюзивная доставка цветов
+			    для людей, которые ценят <span>уникальность</span>
+            </div>
+            <!-- /.main-descr -->
+            <div class="main-slider">
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-1.png" alt="flower-1">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-2.png" alt="flower-2">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-3.png" alt="flower-3">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-4.png" alt="flower-4">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-5.png" alt="flower-5">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-6.png" alt="flower-6">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-3.png" alt="flower-3">
+                </div>
+                <div class="main-slider-block">
+                    <img src="img/main/main-slider_blur_flower-4.png" alt="flower-4">
+                </div>
+            </div>
+            <!-- /.main-slider -->
+            <div class="main-descr__bottom">
+                Закажите&nbsp;эксклюзивный букет&nbsp;со&nbsp;
+                <span>скидкой 10%</span>
+            </div>
+            <!-- /.main-descr__bottom -->
+            <button class="main-button" onclick="overlay()">Заказать букет</button>
+            <!-- /.main-button -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+    <div class="feedback">
+        <div class="container">
+            <h2 class="feedback-title">мы делаем лучшие букеты</h2>
+            <!-- /.feedback-title -->
+            <div class="feedback-slider">
+                <div class="item">
+                    <div class="feedback-block">
+                        <div class="feedback-block__photo">
+                            <img src="img/feedback/feedback-img-1.png" alt="feedback-img-1">
+                            <div class="feedback-block__photo-info">
+                                Алиса&nbsp;Иванова<br>
+                                <small>г. Ноябрьск</small>
+                            </div>
+                            <!-- /.feedback-block__photo-info -->
+                        </div>
+                        <!-- /.feedback-block__photo -->
+                        <div class="feedback-block__descr">
+                            Я очень довольна таким отношением к делу. Обслужили просто превосходно, я заказывала по телефону — так подробно мне всё объяснили, помогли выбрать замечательный букет, и привезли всё вовремя, букет был очень красивый, он очень понравился, спасибо вам огромное.
+                            <span id="feedback-nojabrsk" onclick="nojabrsk()">Посмотреть фотографии букета</span>
+                        </div>
+                        <!-- /.feedback-block__descr -->
+                    </div>
+                    <!-- /.feedback-block -->
+                </div>
+                <div class="item">
+                    <div class="feedback-block">
+                        <div class="feedback-block__photo">
+                            <img src="img/feedback/feedback-img-2.png" alt="feedback-img-2">
+                            <div class="feedback-block__photo-info">
+                                Светлана&nbsp;Еремина<br>
+                                <small>г. Москва</small>
+                            </div>
+                            <!-- /.feedback-block__photo-info -->
+                        </div>
+                        <!-- /.feedback-block__photo -->
+                        <div class="feedback-block__descr">
+                            Очень приветливый персонал принял заказ, курьер отлично справился с заданием - до последнего момента сохранил эффект сюрприза: развеял мамины сомнения (она сначала не хотела его пускать в подъезд :))) Мама ахнула от неожиданности подарка и красоты цветов
+                            <span id="feedback-moscow" onclick="moscow()">Посмотреть фотографии букета</span>
+                        </div>
+                        <!-- /.feedback-block__descr -->
+                    </div>
+                    <!-- /.feedback-block -->
+                </div>
+                <div class="item">
+                    <div class="feedback-block">
+                        <div class="feedback-block__photo">
+                            <img src="img/feedback/feedback-img-3.png" alt="feedback-img-3">
+                            <div class="feedback-block__photo-info">
+                                Анна&nbsp;Трифонова<br>
+                                <small>г. Тверь</small>
+                            </div>
+                            <!-- /.feedback-block__photo-info -->
+                        </div>
+                        <!-- /.feedback-block__photo -->
+                        <div class="feedback-block__descr">
+                            Всегда с мужем покупаю у вас букетики в подарок для близких! Нравится стильный ассортимент, цветочки стоят долго, вкусно пахнут, красиво оформлены. Именинники и другие празднующие в восторге! Так приятно сделать людям праздник)
+                            <span id="feedback-tver" onclick="tver()">Посмотреть фотографии букета</span>
+                        </div>
+                        <!-- /.feedback-block__descr -->
+                    </div>
+                    <!-- /.feedback-block -->
+                </div>
+            </div>
+            <!-- /.feedback-slider -->
+            <div class="feedback-offers">
+                <div class="feedback-offers-block">
+                    <div class="feedback-offers-block__icon">
+                        <img src="img/feedback/feedback-icon-1.png" alt="feedback-icon-1">
+                    </div>
+                    <!-- /.feedback-offers-block__icon -->
+                    <div class="feedback-offers-block__descr">
+                        Только&nbsp;прямые 
+                        поставки&nbsp;цветов
+                        из&nbsp;Голландии
+                    </div>
+                    <!-- /.feedback-offers-block__descr -->
+                </div>
+                <!-- /.feedback-offers-block -->
+                <div class="feedback-offers-block">
+                    <div class="feedback-offers-block__icon">
+                        <img src="img/feedback/feedback-icon-2.png" alt="feedback-icon-2">
+                    </div>
+                    <!-- /.feedback-offers-block__icon -->
+                    <div class="feedback-offers-block__descr">
+                        Наши&nbsp;флористы
+                        имеют&nbsp;10&nbsp;летний
+                        стаж&nbsp;работы
+                    </div>
+                    <!-- /.feedback-offers-block__descr -->
+                </div>
+                <!-- /.feedback-offers-block -->
+                <div class="feedback-offers-block">
+                    <div class="feedback-offers-block__icon">
+                        <img src="img/feedback/feedback-icon-3.png" alt="feedback-icon-3">
+                    </div>
+                    <!-- /.feedback-offers-block__icon -->
+                    <div class="feedback-offers-block__descr">
+                        Все&nbsp;цветы
+                        вручную&nbsp;отбираются
+                        нашими&nbsp;флористами
+                    </div>
+                    <!-- /.feedback-offers-block__descr -->
+                </div>
+                <!-- /.feedback-offers-block -->
+            </div>
+            <!-- /.feedback-offers -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.feedback -->
+    <div class="constructor">
+        <div class="container">
+            <h2 class="constructor-title">Собери&nbsp;свой&nbsp;букет <span>прямо&nbsp;сейчас!</span></h2>
+            <!-- /.container-title -->
+            <div class="constructor-title-descr">Выберите желаемые цветы и наши флористы их оформят и доставят лично в руки!</div>
+            <!-- /.container-title-descr -->
+            <div class="constructor-blocks">
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+                <div class="constructor-block">
+                    <div class="constructor-block__img">
+                        <img src="img/constructor/constructor-image-1.png" alt="constructor-image-1">
+                    </div>
+                    <!-- /.constructor-block__img -->
+                    <div class="constructor-block__title">Розы</div>
+                    <!-- /.constructor-block__title -->
+                    <div class="constructor-block__color-title">Выберите цвет:</div>
+                    <!-- /.constructor-block__color-title -->
+                    <div class="constructor-block__color-pick">
+                        <div class="color-1"></div>
+                        <!-- /.color -->
+                        <div class="color-2"></div>
+                        <!-- /.color -->
+                        <div class="color-3"></div>
+                        <!-- /.color -->
+                        <div class="color-4"></div>
+                        <!-- /.color -->
+                        <div class="color-5"></div>
+                        <!-- /.color -->
+                    </div>
+                    <!-- /.constructor-block__color-pick -->
+                    <div class="constructor-block__quantity">
+                        <div class="constructor-block__quantity-title">Количество:</div>
+                        <!-- /.constructor-block__quantity-title -->
+                        <div class="constructor-block__quantity-count">
+                            <button class="less">-</button>
+                            <!-- /.less -->
+                            <input type="number" step="1" max="100" value="15" class="counter">
+                            <button class="more">+</button>
+                            <!-- /.more -->
+                        </div>
+                        <!-- /.constructor-block__quantity-count -->
+                    </div>
+                    <!-- /.constructor-block__quantity -->
+                    <button class="constructor-block__btn">в корзину</button> <!-- /.constructor-block__btn -->
+                </div>
+                <!-- /.constructor-block -->
+            </div>
+            <!-- /.constructor-blocks -->
+            <div class="constructor-blocks__more">
+                <span>Все цветы</span>
+                <i class="fa fa-angle-down"></i> 
+                <!-- /.fa -->
+            </div>
+            <!-- /.constructor-blocks__more -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.constructor -->
+    <div class="order-call">
+        <div class="container">
+            <h2 class="order-call__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+            <!-- /.order-call__title -->
+            <div class="order-call__descr" onclick="overlay()">
+                закажите&nbsp;звонок нашего&nbsp;флориста!
+            </div>
+            <!-- /.order-call__descr -->
+            <div class="order-call__text">
+                или позвоните по телефону
+            </div>
+            <!-- /.order-call__text -->
+            <div class="order-call__phone">
+                <a href="tel:88006548745">8 (800) 654-87-45</a>
+            </div>
+            <!-- /.order-call__phone -->
+        </div>
+    </div>
+    <!-- /.order-call -->
+    <div class="contact-info">
+        <div class="container">
+            <div class="contact-info__block">
+                <div class="contact-info__details">
+                    <div class="contact-info__details-descr">
+                        <div class="delivery">ДОСТАВКА</div>
+                        <!-- /.delivery -->
+                        <div class="payment">ОПЛАТА</div>
+                        <!-- /.payment -->
+                    </div>
+                    <!-- /.contact-info__details-descr -->
+                    <div class="socials">
+                        <span class="socials__text">Присоединяйтесь к нам:</span>
+                        <a href="#" class="socials__vk">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.contact-info__details -->
+                <div class="contact-info__phones">
+                    <div class="department">
+                        Отдел обслуживания клиентов
+                    </div>
+                    <!-- /.department -->
+                    <div class="phone-number">
+                        <a href="tel:88006548745">8 (800) 654-87-45</a>
+                    </div>
+                    <!-- /.phone-number -->
+                    <div class="around-clock">
+                        Ежедневно, круглосуточно.
+                    </div>
+                    <!-- /.around-clock -->
+                </div>
+                <!-- /.contact-info__phones -->
+            </div>
+            <!-- /.contact-info__block -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.contact-info -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-descr">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/footer/footer-logo.png" alt="footer-logo">
+                        </a>
+                    </div>
+                    <!-- /.logo -->
+                    <div class="text">
+                        Интернет-магазин 
+                        цветов с доставкой 
+                        по всей 
+                        <span>России</span>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.footer-descr -->
+                <div class="footer-signature">
+                    Дизайн&nbsp;сайта: 
+                    <span>Andrei&nbsp;Kosianok</span>
+                </div>
+            </div>
+            <!-- /.footer-block -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.footer -->
+    <div class="overlay-flower">
+        <div class="flower-popup">
+            <div class="close-block">
+                <div class="popup-close"> &times;</div>	
+            </div>
+            <!-- /.close-block -->
+            <div class="bouquet-flower"></div>
+            <!-- /.bouquet-flower -->
+        </div>
+        <!-- /.flower-popup -->
+    </div>  
+    <!-- /.overlay-flower -->    
+    <div class="flower-overlay">
+        <div class="popup-flower">
+            <div class="close-block">
+                <div class="popup-close"> &times;</div>
+                <!-- /.popup-close -->
+            </div>
+            <!-- /.close-block -->
+            <div class="popup-flower__title"></div>
+            <!-- /.popup-flower__title -->
+            <div class="popup-flower__descr"></div>
+            <!-- /.popup-flower__descr -->
+            <div class="popup-top__img"></div>
+            <!-- /.popup-top__img -->
+            <div class="popup-bottom__img"></div>
+            <!-- /.popup-bottom__img -->
+        </div>
+        <!-- /.popup-flower -->
+    </div>
+    <!-- /.flower-overlay -->
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-title">Форма обратной связи</div>
+            <!-- /.popup-title --> 
+            <div class="close-block">
+                <div class="popup-close"> &times;</div>
+                <!-- /.popup-close --> 
+            </div>
+            <!-- /.close-block --> 
+            <form action="mailer/smart.php" method="POST" >
+                <div class="popup-descr">Закажите звонок и наш флорист <br>перезвонит вам в течении часа</div>
+                <!-- /.popup-descr --> 
+                <label class="popup-label" for="phone">Введите ваш номер телефона:</label>
+                <input type="tel" class="popup-input" id="phone" placeholder="+7 (999)-999-99-99" name="user_phone" required>
+                <input type="submit" class="popup-btn" value="Оставить заявку!" onclick="yaCounter49906030.reachGoal('orderCall')">
+            </form>
+            <div class="popup-rose"><img src="img/popup-rose.png" alt=""></div>
+            <!-- /.popup-rose --> 
+        </div>
+        <!-- /.popup --> 
+    </div>
+    <!-- /.overlay --> 
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(".popup-input").mask("+7 (999) 999-99-99");
+        function nojabrsk() {
+            $('.bouquet-flower').html('<img src="img/feedback/feedback-img-1.png" alt="feedback-img-1">');
+            $('.overlay-flower').show();
+        };
+        function moscow() {
+            $('.bouquet-flower').html('<img src="img/feedback/feedback-img-2.png" alt="feedback-img-2">');
+            $('.overlay-flower').show();
+        };
+        function tver() {
+            $('.bouquet-flower').html('<img src="img/feedback/feedback-img-3.png" alt="feedback-img-3">');
+            $('.overlay-flower').show();
+        };
+        function overlay() {
+            $('.overlay').show();
+        };
+    </script>
+    <script>(function (d, w, c){(w[c]=w[c] || []).push(function(){try{w.yaCounter49906030=new Ya.Metrika2({id:49906030, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ut:"noindex"});}catch(e){}}); var n=d.getElementsByTagName("script")[0], s=d.createElement("script"), f=function (){n.parentNode.insertBefore(s, n);}; s.type="text/javascript"; s.async=true; s.src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded", f, false);}else{f();}})(document, window, "yandex_metrika_callbacks2"); </script><div><img src="https://mc.yandex.ru/watch/49906030?ut=noindex" style="position:absolute; left:-9999px;" alt=""/></div>
 </body>
 </html>
